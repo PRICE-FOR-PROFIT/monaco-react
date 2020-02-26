@@ -7,8 +7,8 @@
   "types": "lib/index.d.ts",
   "scripts": {
     "lint": "npx eslint src",
-    "build": "npx babel src --out-dir lib && cp-cli ./src/index.d.ts ./lib/",
-    "prepublish": "npm test && npm run lint && npm run build",
+    "build": "npx babel src --out-dir lib && npx cp-cli ./src/index.d.ts ./lib/",
+    "DISABLE_prepublish": "npm test && npm run lint && npm run build",
     "test": "npx jest"
   },
   "repository": {
