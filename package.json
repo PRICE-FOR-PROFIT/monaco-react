@@ -7,7 +7,7 @@
   "types": "lib/index.d.ts",
   "scripts": {
     "lint": "npx eslint src",
-    "build": "npx babel src --out-dir lib && cp ./src/index.d.ts ./lib/",
+    "build": "npx babel src --out-dir lib && cp-cli ./src/index.d.ts ./lib/",
     "prepublish": "npm test && npm run lint && npm run build",
     "test": "npx jest"
   },
@@ -46,6 +46,7 @@
     "@testing-library/react": "^9.2.0",
     "babel-eslint": "10.0.3",
     "babel-jest": "^24.9.0",
+    "cp-cli": "^2.0.0",
     "eslint": "6.5.1",
     "eslint-config-react-app": "^5.0.2",
     "eslint-plugin-flowtype": "4.3.0",
